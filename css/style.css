@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace
+}
+
+body {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    line-height: 1.6;
+}
+
+section {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #112240;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li a {
+    color: #64ffda;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+p {
+    margin-right: 20px;
+}
+
+h1 {
+    color: #e6f1ff;
+    font-size: 2.5rem;
+}
+
+a {
+    color: #64ffda;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 500ms;
+    transition-delay: 50ms;
+    color: #e2efec;
+    font-weight: bold;
+}
+
+.project-card {
+    margin-bottom: 10px;
+}
+
+.itemDiv:hover{
+    transition: 600ms;
+    transition-delay: 100ms;
+    background-color: #e2efec;
+    color: #112240;
+    font-weight: bold;    
+}
+
+#about, #skills, footer {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.skills-grid div {
+    background: #112240;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #233554;
+}
+
+/* typewriter*/
+
+/* Global */
+.typewriter{
+    font-family: 'Anonymous Pro', monospace; 
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    color: rgba(201, 187, 187, 0.75);
+    background-color: none;  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 3s steps(20) 1s 1 normal both,
+               blinkTextCursor 1000ms steps(20) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 9.8em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
